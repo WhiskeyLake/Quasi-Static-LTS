@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample F1-like Circuit"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            8.0,
+            50.0
+          ],
+          [
+            8.001,
+            50.0
+          ],
+          [
+            8.002,
+            50.0005
+          ],
+          [
+            8.001,
+            50.001
+          ],
+          [
+            8.0,
+            50.001
+          ],
+          [
+            7.999,
+            50.0005
+          ],
+          [
+            8.0,
+            50.0
+          ]
+        ]
+      }
+    }
+  ]
+}
