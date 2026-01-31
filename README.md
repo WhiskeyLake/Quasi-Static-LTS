@@ -88,25 +88,8 @@ MATLAB	Core physics solver
 Python	Track preprocessing & parameter sweeps
 GeoJSON	Real circuit geometry input
 
-📂 Project Structure
-LTS/
-├── matlab/
-│   ├── main.m
-│   ├── run_lts.m
-│   ├── config/         # vehicle, tire, aero parameters
-│   ├── models/         # tire and aero models
-│   ├── solvers/        # forward/backward passes
-│   └── utils/          # track smoothing, unit checks
-│
-├── python/
-│   ├── track_processing.py
-│   ├── run_param_sweep.py
-│   └── matlab_bridge.py
-│
-├── data/
-│   ├── tracks/
-│   └── cars/
-└── README.md
+<img width="485" height="483" alt="image" src="https://github.com/user-attachments/assets/25561daf-79ad-4963-bb34-f08d18b9afab" />
+
 
 ▶️ How to Run
 MATLAB
