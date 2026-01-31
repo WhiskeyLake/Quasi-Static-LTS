@@ -1,4 +1,4 @@
-🏎️ Quasi-Static Lap Time Simulator (LTS)
+**🏎️ Quasi-Static Lap Time Simulator (LTS)**
 
 A physics-based quasi-static lap time simulator for estimating race car performance on real-world circuits using grip, power, braking, and aerodynamic constraints.
 
@@ -12,7 +12,7 @@ Total lap time
 
 Designed for fast performance evaluation, setup comparison, and motorsport engineering studies.
 
-📌 Project Overview
+**📌 Project Overview**
 
 This simulator models a vehicle driving around a discretized race track.
 At each track segment, vehicle speed is limited by:
@@ -31,8 +31,8 @@ Lap time is computed by integrating:
 
 	​
 
-🧠 Methodology
-1️⃣ Track Processing
+**🧠 Methodology
+1️⃣ Track Processing**
 
 Track centerlines are imported (e.g., from GeoJSON) and converted into:
 
@@ -42,14 +42,14 @@ Curvature κ(s)
 
 The track is resampled to uniform spacing for numerical stability.
 
-2️⃣ Cornering Speed Limit
+**2️⃣ Cornering Speed Limit**
 
 For each segment, the maximum speed allowed by lateral grip is computed:
 <img width="256" height="69" alt="image" src="https://github.com/user-attachments/assets/4a4507ab-0507-43fb-a65d-a3178499890e" />
 ​
 where vertical load includes aerodynamic downforce.
 
-3️⃣ Forward Pass (Acceleration-Limited)
+**3️⃣ Forward Pass (Acceleration-Limited)**
 
 Speed is propagated forward using:
 <img width="251" height="58" alt="image" src="https://github.com/user-attachments/assets/f57ee42a-43ae-44c2-9093-727653cbe073" />
@@ -63,16 +63,16 @@ Tire friction (traction circle / ellipse)
 
 Aerodynamic drag
 
-4️⃣ Backward Pass (Braking-Limited)
+**4️⃣ Backward Pass (Braking-Limited)**
 
 A reverse pass ensures the car can decelerate in time for upcoming corners by applying braking force limits.
 
-5️⃣ Final Speed Profile
+**5️⃣ Final Speed Profile**
 
 The physically feasible speed at each segment is:
 <img width="411" height="56" alt="image" src="https://github.com/user-attachments/assets/806ba3db-9fd6-4789-988c-f437045ef2da" />
 
-📊 Outputs
+**📊 Outputs**
 
 Speed vs distance
 
@@ -82,7 +82,7 @@ Total lap time
 
 Performance hotspots (braking zones, traction limits)
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 Tool	Purpose
 MATLAB	Core physics solver
 Python	Track preprocessing & parameter sweeps
@@ -91,7 +91,7 @@ GeoJSON	Real circuit geometry input
 <img width="485" height="483" alt="image" src="https://github.com/user-attachments/assets/25561daf-79ad-4963-bb34-f08d18b9afab" />
 
 
-▶️ How to Run
+**▶️ How to Run**
 MATLAB
 cd matlab
 main
@@ -115,7 +115,7 @@ Running parameter sweeps
 
 Automating studies
 
-📈 Example Result
+**📈 Example Result**
 
 Tested on the Baku F1 Circuit:
 
@@ -126,7 +126,7 @@ Real F1 Benchmark	~1:41–1:44
 
 Given the quasi-static model (no transient tire/ERS effects), this is within realistic bounds.
 
-🚀 Future Improvements
+**🚀 Future Improvements**
 
 GG diagram with combined slip limits
 
@@ -140,7 +140,7 @@ Setup parameter sweeps
 
 Sim-to-real telemetry correlation
 
-🎯 Purpose
+**🎯 Purpose**
 
 This project demonstrates:
 
