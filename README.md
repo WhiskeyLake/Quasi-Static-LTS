@@ -1,4 +1,4 @@
-** Quasi-Static Lap Time Simulator (LTS)**
+**Quasi-Static Lap Time Simulator (LTS)**
 
 A physics-based quasi-static lap time simulator for estimating race car performance on real-world circuits using grip, power, braking, and aerodynamic constraints.
 
@@ -32,6 +32,7 @@ Lap time is computed by integrating:
 	​
 
 **Methodology**
+
 **1️⃣ Track Processing**
 
 Track centerlines are imported (e.g., from GeoJSON) and converted into:
@@ -83,10 +84,13 @@ Total lap time
 Performance hotspots (braking zones, traction limits)
 
 **Tech Stack**
-Tool	Purpose
-MATLAB	Core physics solver
-Python	Track preprocessing & parameter sweeps
-GeoJSON	Real circuit geometry input
+
+
+MATLAB -	Core physics solver
+
+Python -	Track preprocessing & parameter sweeps
+
+GeoJSON -	Real circuit geometry input
 
 <img width="485" height="483" alt="image" src="https://github.com/user-attachments/assets/25561daf-79ad-4963-bb34-f08d18b9afab" />
 
